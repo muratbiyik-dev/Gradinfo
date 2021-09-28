@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PureGrad.Card">
+
+    <LinearLayout style="@style/PureGrad.Linear.Horizontal">
+
+        <ImageView
+            android:id="@+id/imgGradGC"
+            style="@style/PureGrad.Image"
+            android:layout_margin="@dimen/App_Margin_M"
+            android:contentDescription="@string/Description_Image"
+            android:src="@drawable/img_grad" />
+
+        <LinearLayout style="@style/PureGrad.Linear">
+
+            <TextView
+                android:id="@+id/txtNameGC"
+                style="@style/PureGrad.Text"
+                android:layout_margin="@dimen/App_Margin_S"
+                android:text="@string/Grad_Name_Sample" />
+
+            <TextView
+                android:id="@+id/txtNumberGC"
+                style="@style/PureGrad.Text"
+                android:layout_margin="@dimen/App_Margin_S"
+                android:text="@string/Grad_Number_Sample" />
+
+            <TextView
+                android:id="@+id/txtDegreeGC"
+                style="@style/PureGrad.Text"
+                android:layout_margin="@dimen/App_Margin_S"
+                android:text="@string/Grad_Degree_Sample" />
+
+            <TextView
+                android:id="@+id/txtYearGC"
+                style="@style/PureGrad.Text"
+                android:layout_margin="@dimen/App_Margin_S"
+                android:text="@string/Grad_Year_Sample" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

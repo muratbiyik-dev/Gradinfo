@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PureRoot.Relative"
+    tools:context=".fragment.PrefFragment">
+
+    <LinearLayout
+        style="@style/PureBox.Linear"
+        android:layout_marginHorizontal="@dimen/App_Margin_XL"
+        android:layout_marginTop="@dimen/App_Margin_XL">
+
+        <TextView
+            style="@style/PureButton.Text.Title"
+            android:layout_marginBottom="@dimen/App_Margin_L"
+            android:text="@string/Pref_Theme" />
+
+        <RadioGroup
+            android:id="@+id/radGrpThemePF"
+            style="@style/PureButton.Radio.Group">
+
+            <RadioButton
+                android:id="@+id/radBtnDefaultThemePF"
+                style="@style/PureButton.Radio.Button"
+                android:text="@string/Pref_Theme_Default" />
+
+            <RadioButton
+                android:id="@+id/radBtnLightThemePF"
+                style="@style/PureButton.Radio.Button"
+                android:text="@string/Pref_Theme_Light" />
+
+            <RadioButton
+                android:id="@+id/radBtnDarkThemePF"
+                style="@style/PureButton.Radio.Button"
+                android:text="@string/Pref_Theme_Dark" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>

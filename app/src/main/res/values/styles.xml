@@ -1,0 +1,290 @@
+<resources>
+
+    <!-- region Theme -->
+    <style name="Theme.Gradinfo.Launch">
+        <item name="android:windowBackground">
+            @drawable/layer_launch
+        </item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region PureRoot -->
+    <style name="PureRoot" />
+
+    <style name="PureRoot.Coordinator" parent="PureRoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="PureRoot.Relative" parent="PureRoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region PureBox -->
+    <style name="PureBox" />
+
+    <style name="PureBox.Container.Scrollable" parent="PureBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="layout_behavior">@string/appbar_scrolling_view_behavior</item>
+    </style>
+
+    <style name="PureBox.Scroll" parent="PureBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="PureBox.Linear" parent="PureBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region PureBar -->
+    <style name="PureBar" />
+
+    <style name="PureBar.AppBar" parent="PureBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="PureBar.Toolbar" parent="PureBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:statusBarColor</item>
+        <item name="layout_scrollFlags">scroll|enterAlways</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+    <style name="PureBar.Relative" parent="PureBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="PureBar.Relative.Image" parent="PureBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="PureBar.Relative.Text" parent="PureBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/App_TextSize_L</item>
+        <item name="android:textColor">?colorOnPrimary</item>
+    </style>
+
+    <style name="PureBar.BottomNav" parent="PureBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">?android:statusBarColor</item>
+        <item name="layout_behavior">@string/hide_bottom_view_on_scroll_behavior</item>
+        <item name="labelVisibilityMode">unlabeled</item>
+    </style>
+
+    <style name="PureBar.Search" parent="PureBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:imeOptions">flagNoExtractUi|flagNoFullscreen</item>
+        <item name="android:textSize">@dimen/App_TextSize_M</item>
+        <item name="android:background">@drawable/shape_edit</item>
+        <item name="iconifiedByDefault">false</item>
+        <item name="searchIcon">@null</item>
+        <item name="queryBackground">@null</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region PureButton -->
+    <style name="PureButton" />
+
+    <style name="PureButton.Linear" parent="PureButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="PureButton.Linear.Card" parent="PureButton.Linear">
+        <item name="android:paddingStart">@dimen/App_Padding_S</item>
+        <item name="android:paddingEnd">@dimen/App_Padding_S</item>
+        <item name="android:paddingBottom">@dimen/App_Padding_S</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="PureButton.Text" parent="PureButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="PureButton.Text.Title" parent="PureButton.Text">
+        <item name="android:textSize">@dimen/App_TextSize_L</item>
+        <item name="android:textColor">?colorOnSecondary</item>
+    </style>
+
+    <style name="PureButton.Text.Selectable" parent="PureButton.Text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/App_TextSize_L</item>
+        <item name="android:textColor">?colorOnSurface</item>
+        <item name="android:foreground">@drawable/ripple_selectable</item>
+        <item name="android:background">@drawable/shape_button</item>
+    </style>
+
+    <style name="PureButton.Text.Selectable.Login" parent="PureButton.Text.Selectable">
+        <item name="android:layout_width">@dimen/Grad_Login_Width</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="PureButton.Radio.Group" parent="PureButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="PureButton.Radio.Button" parent="PureButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableStart">@drawable/selector_check</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textSize">@dimen/App_TextSize_L</item>
+        <item name="android:textColor">?colorOnBackground</item>
+        <item name="android:foreground">@drawable/ripple_selectable</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region PureSpinner -->
+    <style name="PureSpinner" />
+
+    <style name="PureSpinner.Dialog" parent="PureSpinner">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:spinnerMode">dialog</item>
+        <item name="android:theme">@style/PureDialog.Spinner</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region PureDialog -->
+    <style name="PureDialog" />
+
+    <style name="PureDialog.Linear" parent="PureDialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">400dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">?colorError</item>
+    </style>
+
+    <style name="PureDialog.Text" parent="PureDialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/App_TextSize_M</item>
+        <item name="android:textColor">?colorOnError</item>
+    </style>
+
+    <style name="PureDialog.Text.Title" parent="PureDialog.Text">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/App_TextSize_L</item>
+    </style>
+
+    <style name="PureDialog.Alert" parent="PureDialog">
+        <item name="android:background">?colorError</item>
+    </style>
+
+    <style name="PureDialog.Spinner" parent="PureDialog">
+        <item name="android:background">?colorError</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region PureInfo -->
+    <style name="PureInfo" />
+
+    <style name="PureInfo.Text" parent="PureInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/App_TextSize_M</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+
+    <style name="PureInfo.Text.Title" parent="PureInfo.Text">
+        <item name="android:textSize">@dimen/App_TextSize_L</item>
+        <item name="android:textColor">?colorOnSecondary</item>
+    </style>
+
+    <style name="PureInfo.Text.Card" parent="PureInfo.Text">
+        <item name="android:background">@drawable/shape_info</item>
+    </style>
+
+    <style name="PureInfo.Image" parent="PureInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <!-- endregion -->
+
+    <!-- region PureGrad -->
+    <style name="PureGrad" />
+
+    <style name="PureGrad.Recycler" parent="PureGrad">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="PureGrad.Card" parent="PureGrad">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="PureGrad.Linear" parent="PureGrad">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="PureGrad.Linear.Horizontal" parent="PureGrad.Linear">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="PureGrad.Image" parent="PureGrad">
+        <item name="android:layout_width">@dimen/Grad_Image_Width</item>
+        <item name="android:layout_height">@dimen/Grad_Image_Height</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="PureGrad.Image.Profile" parent="PureGrad.Image">
+        <item name="android:background">@drawable/shape_profile</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="PureGrad.Text" parent="PureGrad">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/App_TextSize_M</item>
+        <item name="android:textColor">?colorOnSurface</item>
+    </style>
+
+    <style name="PureGrad.Text.Label" parent="PureGrad.Text">
+        <item name="android:layout_width">@dimen/Grad_Label_Width</item>
+        <item name="android:textColor">?colorOnSecondary</item>
+    </style>
+
+    <style name="PureGrad.Text.Edit" parent="PureGrad.Text">
+        <item name="android:layout_width">@dimen/Grad_Edit_Width</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:imeOptions">flagNoExtractUi|flagNoFullscreen</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">?colorOnBackground</item>
+        <item name="android:background">@drawable/shape_edit</item>
+    </style>
+    <!-- endregion -->
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PureRoot.Relative"
+    tools:context=".fragment.UserFragment">
+
+    <include
+        android:id="@+id/incGradCardUF"
+        layout="@layout/card_grad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/App_Margin_S" />
+
+    <include
+        android:id="@+id/incGradCardPrivateUF"
+        layout="@layout/card_grad_private"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/incGradCardUF"
+        android:layout_marginHorizontal="@dimen/App_Margin_S"
+        android:layout_marginBottom="@dimen/App_Margin_S" />
+
+</RelativeLayout>

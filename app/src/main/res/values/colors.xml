@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- region Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="teal">#00695c</color>
+    <color name="teal_light">#439889</color>
+    <color name="teal_dark">#003d33</color>
+    <color name="purple">#7b1fa2</color>
+    <color name="purple_light">#ae52d4</color>
+    <color name="purple_dark">#4a0072</color>
+    <color name="red">#f44336</color>
+    <color name="red_light">#ffcdd2</color>
+    <color name="red_dark">#b71c1c</color>
+    <!-- endregion -->
+
+    <!-- region App Colors -->
+    <!-- region Primary Colors -->
+    <color name="Primary">@color/teal</color>
+    <color name="Primary_Variant">@color/teal_dark</color>
+    <color name="On_Primary">@color/white</color>
+
+    <color name="Primary_Night">@color/teal</color>
+    <color name="Primary_Variant_Night">@color/teal_dark</color>
+    <color name="On_Primary_Night">@color/white</color>
+    <!-- endregion -->
+
+    <!-- region Secondary Colors -->
+    <color name="Secondary">@color/purple_light</color>
+    <color name="Secondary_Variant">@color/purple_dark</color>
+    <color name="On_Secondary">@color/red_dark</color>
+
+    <color name="Secondary_Night">@color/purple</color>
+    <color name="Secondary_Variant_Night">@color/purple_dark</color>
+    <color name="On_Secondary_Night">@color/red_light</color>
+    <!-- endregion -->
+
+    <!-- region Custom Theme -->
+    <color name="Icon_Background">@color/teal_dark</color>
+
+    <color name="Background">@color/white</color>
+    <color name="OnBackground">@color/black</color>
+    <color name="Surface">@color/red_light</color>
+    <color name="OnSurface">@color/black</color>
+    <color name="Error">@color/teal_light</color>
+    <color name="OnError">@color/black</color>
+
+    <color name="Background_Night">@color/black</color>
+    <color name="OnBackground_Night">@color/white</color>
+    <color name="Surface_Night">@color/red_dark</color>
+    <color name="OnSurface_Night">@color/white</color>
+    <color name="Error_Night">@color/teal_dark</color>
+    <color name="OnError_Night">@color/white</color>
+    <!-- endregion -->
+    <!-- endregion -->
+
+</resources>

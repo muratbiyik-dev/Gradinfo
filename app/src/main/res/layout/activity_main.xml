@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PureRoot.Coordinator"
+    tools:context=".activity.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout style="@style/PureBar.AppBar">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarMA"
+            style="@style/PureBar.Toolbar">
+
+            <RelativeLayout style="@style/PureBar.Relative">
+
+                <ImageView
+                    android:id="@+id/imgToolbarIconMA"
+                    style="@style/PureBar.Relative.Image"
+                    android:layout_marginHorizontal="@dimen/App_Margin_M"
+                    android:contentDescription="@string/Description_Icon"
+                    android:src="@drawable/ic_home" />
+
+                <TextView
+                    android:id="@+id/txtToolbarTitleMA"
+                    style="@style/PureBar.Relative.Text"
+                    android:layout_toEndOf="@+id/imgToolbarIconMA"
+                    android:text="@string/Home_Title" />
+
+                <ImageView
+                    android:id="@+id/imgToolbarButtonMA"
+                    style="@style/PureBar.Relative.Image"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginHorizontal="@dimen/App_Margin_M"
+                    android:contentDescription="@string/Description_Icon"
+                    android:src="@drawable/ic_filter" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/containerMA"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        style="@style/PureBox.Container.Scrollable"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_main" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spinKitMA"
+        style="@style/SpinKitView.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="?colorOnBackground" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavMA"
+        style="@style/PureBar.BottomNav"
+        app:menu="@menu/menu_bottom_nav" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

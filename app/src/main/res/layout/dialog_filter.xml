@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PureDialog.Linear"
+    android:paddingHorizontal="@dimen/App_Padding_M"
+    android:paddingTop="@dimen/App_Padding_M"
+    tools:context=".dialog.FilterDialog">
+
+    <TextView
+        style="@style/PureDialog.Text"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:text="@string/Filter_Degree_Title" />
+
+    <TextView
+        android:id="@+id/txtDegreeFD"
+        style="@style/PureButton.Text.Selectable"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:text="@string/Filter_Degree_All" />
+
+    <Spinner
+        android:id="@+id/spnDegreeFD"
+        style="@style/PureSpinner.Dialog"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:prompt="@string/Filter_Degree_Title" />
+
+    <TextView
+        style="@style/PureDialog.Text"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:text="@string/Filter_Year_Title" />
+
+    <TextView
+        android:id="@+id/txtYearFD"
+        style="@style/PureButton.Text.Selectable"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:text="@string/Filter_Year_All" />
+
+    <Spinner
+        android:id="@+id/spnYearFD"
+        style="@style/PureSpinner.Dialog"
+        android:layout_marginBottom="@dimen/App_Margin_S"
+        android:prompt="@string/Filter_Year_Title" />
+
+    <LinearLayout
+        style="@style/PureButton.Linear"
+        android:layout_marginTop="@dimen/App_Margin_M"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txtCancelFD"
+            style="@style/PureButton.Text.Selectable"
+            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/App_Margin_M"
+            android:layout_weight="1"
+            android:text="@string/Filter_Cancel" />
+
+        <TextView
+            android:id="@+id/txtApplyFD"
+            style="@style/PureButton.Text.Selectable"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/Filter_Apply" />
+
+    </LinearLayout>
+
+</LinearLayout>

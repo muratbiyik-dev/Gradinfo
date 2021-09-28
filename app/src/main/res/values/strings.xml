@@ -1,0 +1,92 @@
+<resources>
+
+    <string name="app_name">Gradinfo</string>
+
+    <!-- region Content Description -->
+    <string name="Description_Icon">"Icon"</string>
+    <string name="Description_Image">"Image"</string>
+    <!-- endregion -->
+
+    <!-- region MainActivity -->
+    <string name="Main_Conn_Fail_Title">"Bağlantı Başarısız!"</string>
+    <string name="Main_Conn_Fail_Content">"Lütfen cihazınızın internete bağlı olduğundan emin olun ve tekrar deneyin."</string>
+    <string name="Main_Conn_Fail_Button">"Tekrar Dene"</string>
+    <!-- endregion -->
+
+    <!-- region HomeFragment -->
+    <string name="Home_Title">"Ana Sayfa"</string>
+    <!-- endregion -->
+
+    <!-- region SearchFragment -->
+    <string name="Search_Title">"Arama"</string>
+
+    <string name="Search_Query_Hint_Name">"Öğrenci adı giriniz…"</string>
+    <string name="Search_Query_Hint_Number">"Öğrenci numarası giriniz…"</string>
+    <string name="Search_No_Result">"Hiç sonuç bulunamadı"</string>
+    <string name="Search_Info">"İsim ve numara aramaları arasında geçiş yapmak için (U) butonunu kullanın."</string>
+    <!-- endregion -->
+
+    <!-- region LoginFragment -->
+    <string name="Login_Title">"Giriş"</string>
+    <string name="Login_Number">"Öğrenci Numarası"</string>
+    <string name="Login_Password">"Şifre"</string>
+    <string name="Login_Fail">"İnternet bağlantısı bulunamadı"</string>
+    <string name="Login_Wrong_Param">"Öğrenci numarası veya şifre hatalı"</string>
+    <!-- endregion -->
+
+    <!-- region UserFragment -->
+    <string name="User_Title">"Kullanıcı"</string>
+    <!-- endregion -->
+
+    <!-- region PrefFragment -->
+    <string name="Pref_Title">"Tercihler"</string>
+
+    <string name="Pref_Theme">"Uygulama Teması"</string>
+    <string name="Pref_Theme_Default">"Varsayılan Tema"</string>
+    <string name="Pref_Theme_Light">"Açık Tema"</string>
+    <string name="Pref_Theme_Dark">"Koyu Tema"</string>
+    <!-- endregion -->
+
+    <!-- region GradFragment -->
+    <string name="Grad_Title">"Mezun Öğrenci"</string>
+
+    <string name="Grad_Number_Sample">"1170606018"</string>
+    <string name="Grad_Name_Sample">"Murat BIYIK"</string>
+    <string name="Grad_Degree_Sample">"Bilgisayar Mühendisliği"</string>
+    <string name="Grad_Year_Sample">"2021"</string>
+
+    <string name="Grad_Profession_Label">"Meslek"</string>
+    <string name="Grad_Profession_Sample">"Belirtilmemiş"</string>
+    <string name="Grad_Province_Label">"Şehir"</string>
+    <string name="Grad_Province_Sample">"Belirtilmemiş"</string>
+
+    <string name="Grad_Email_Label">"E-Mail"</string>
+    <string name="Grad_Email_Sample">"Belirtilmemiş"</string>
+    <string name="Grad_Phone_Label">"Telefon"</string>
+    <string name="Grad_Phone_Sample">"Belirtilmemiş"</string>
+
+    <string name="Grad_Note_Label">"Not"</string>
+    <string name="Grad_Note_Sample">"Belirtilmemiş"</string>
+    <!-- endregion -->
+
+    <!-- region FilterDialog -->
+    <string name="Filter_Title">"Filtrele"</string>
+
+    <string name="Filter_Degree_Title">"Lisans"</string>
+    <string name="Filter_Degree_All">"Tüm Lisanslar"</string>
+
+    <string name="Filter_Year_Title">"Mezuniyet Yılı"</string>
+    <string name="Filter_Year_All">"Tüm Yıllar"</string>
+
+    <string name="Filter_Apply">"Uygula"</string>
+    <string name="Filter_Cancel">"İptal Et"</string>
+    <!-- endregion -->
+
+    <!-- region CriteriaDialog -->
+    <string name="Criteria_Title">"Kriter"</string>
+
+    <string name="Criteria_Name">"Öğrenci Adı"</string>
+    <string name="Criteria_Number">"Öğrenci Numarası"</string>
+    <!-- endregion -->
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PureRoot.Relative"
+    tools:context=".fragment.LoginFragment">
+
+    <LinearLayout
+        style="@style/PureBox.Linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/App_Margin_XXXL">
+
+        <ImageView
+            style="@style/PureGrad.Image.Profile"
+            android:layout_marginBottom="@dimen/App_Margin_L"
+            android:contentDescription="@string/Description_Image"
+            android:src="@drawable/img_grad" />
+
+        <EditText
+            android:id="@+id/edtNumberLF"
+            style="@style/PureGrad.Text.Edit"
+            android:layout_marginBottom="@dimen/App_Margin_M"
+            android:hint="@string/Login_Number"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="10" />
+
+        <EditText
+            android:id="@+id/edtPasswordLF"
+            style="@style/PureGrad.Text.Edit"
+            android:layout_marginBottom="@dimen/App_Margin_L"
+            android:hint="@string/Login_Password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:maxLength="32" />
+
+        <TextView
+            android:id="@+id/txtLoginLF"
+            style="@style/PureButton.Text.Selectable.Login"
+            android:text="@string/Login_Title" />
+
+    </LinearLayout>
+
+</RelativeLayout>

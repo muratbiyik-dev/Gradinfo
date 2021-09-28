@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PureRoot.Relative"
+    tools:context=".fragment.SearchFragment">
+
+    <LinearLayout
+        android:id="@+id/lnrSearchSF"
+        style="@style/PureBox.Linear"
+        android:layout_marginHorizontal="@dimen/App_Margin_S"
+        android:layout_marginTop="@dimen/App_Margin_S">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchSF"
+            style="@style/PureBar.Search"
+            android:layout_marginBottom="@dimen/App_Margin_S"
+            app:queryHint="@string/Search_Query_Hint_Name" />
+
+        <TextView
+            android:id="@+id/txtNoResultSF"
+            style="@style/PureInfo.Text.Card"
+            android:layout_marginBottom="@dimen/App_Margin_S"
+            android:text="@string/Search_No_Result"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/lnrInfoSF"
+            style="@style/PureBox.Linear"
+            android:layout_marginBottom="@dimen/App_Margin_S"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                style="@style/PureInfo.Image"
+                android:layout_marginBottom="@dimen/App_Margin_S"
+                android:contentDescription="@string/Description_Image"
+                android:src="@drawable/img_search" />
+
+            <TextView
+                style="@style/PureInfo.Text.Card"
+                android:layout_marginBottom="@dimen/App_Margin_S"
+                android:text="@string/Search_Info" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerSF"
+        style="@style/PureGrad.Recycler"
+        android:layout_below="@+id/lnrSearchSF"
+        android:layout_marginHorizontal="@dimen/App_Margin_S"
+        android:layout_marginBottom="@dimen/App_Margin_S" />
+
+</RelativeLayout>

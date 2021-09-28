@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/PureButton.Linear.Card">
+
+    <TextView
+        android:id="@+id/txtTitleBC"
+        style="@style/PureButton.Text.Selectable"
+        android:text="@string/Filter_Degree_All" />
+
+</LinearLayout>

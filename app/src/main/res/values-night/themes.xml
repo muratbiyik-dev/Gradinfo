@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.Gradinfo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/Primary_Night</item>
+        <item name="colorPrimaryVariant">@color/Primary_Variant_Night</item>
+        <item name="colorOnPrimary">@color/On_Primary_Night</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Secondary_Night</item>
+        <item name="colorSecondaryVariant">@color/Secondary_Variant_Night</item>
+        <item name="colorOnSecondary">@color/On_Secondary_Night</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize your theme here. -->
+        <item name="android:colorBackground">@color/Background_Night</item>
+        <item name="colorOnBackground">@color/OnBackground_Night</item>
+        <item name="colorSurface">@color/Surface_Night</item>
+        <item name="colorOnSurface">@color/OnSurface_Night</item>
+        <item name="colorError">@color/Error_Night</item>
+        <item name="colorOnError">@color/OnError_Night</item>
+    </style>
+
+</resources>
